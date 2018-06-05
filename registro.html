@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="quejas,sociales,quejas sociales,">
+		<link rel="stylesheet" type="text/css" href="css/todos.css">
+		<title>Portal de quejas</title>
+	</head>
+	<body>
+		<header>
+			<span class="cabecera">
+				<img class="logo" id="logoCabecera" src="img/logo.png">
+				<h1>Portal de Quejas</h1>
+				<ul>
+					<li><a href="iniciarSesion.html">Iniciar sesión</a></li>
+					<li><a href="#home">Registrarse</a></li>
+				</ul>
+			</span>
+		</header>
+		<h3>¡Regístrate!</h3>
+		<h5>De esa forma podras interactuar con los demas usuarios y colocar tus propias quejas.</h5>
+		<form id="formularioRegistro" action="">
+			<label for="nombreUsuario">Usuario:</label><br>
+			<input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuario a usar"><br><br>
+			<label for="correoUsuario">Correo:</label><br>
+			<input type="text" name="correoUsuario" id="correoUsuario" placeholder="Correo a utilizar"><br><br>
+			<label for="numeroCelular">Celular:</label><br>
+			<input type="text" name="numeroCelular" id="numeroCelular" placeholder="Numero de celular">
+			<label id="consultaDeCelular">(?)</label>
+			<br><br>
+			<label>Provincia: </label>
+			<select name="provincias" id="provincias">
+				<option value="Esmeraldas">Esmeraldas</option>
+				<option value="Guayas">Guayas</option>
+				<option value="Pichincha">Pichincha</option>
+			</select>
+			<label>Ciudad: </label>
+			<select name="ciudades" id="ciudades">
+			</select><br><br>
+			<label for="password">Contraseña:</label><br>
+			<input type="text" name="password" id="password" placeholder="Contraseña a utilizar"><br><br>
+			<label for="passwordRepeat">Confirmar contraseña:</label><br>
+			<input type="text" name="passwordRepeat" id="passwordRepeat" placeholder="Confirme su contraseña"><br><br>
+			<button type="button">REGISTRAR</button>
+		</form>
+		<footer>
+			
+		</footer>
+	</body>
+</html>
