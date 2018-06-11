@@ -3,17 +3,21 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="keywords" content="quejas,sociales,quejas sociales,">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/todos.css">
 		<title>Portal de quejas</title>
 	</head>
 	<body>
 		<header>
-			<img class="logo" id="logoCabecera" src="img/logo.png">
-			<h1>Portal de Quejas</h1>
-			<ul>
-				<li><a href="iniciarSesion.html">Iniciar sesión</a></li>
-				<li><a href="registro.html">Registrarse</li>
-			</ul>
+			<div class="container-fluid d-flex align-items-center">
+				<img class="logo" id="logoCabecera" src="img/logo.png">
+				<div class="mr-auto p-2">
+					<h1><span>Portal de Quejas</span></h1>
+				</div>
+				<div class="p-2">
+					<a href="iniciarSesion.html">Iniciar sesión</a> │ <a href="registro.html">Registrarse</a>
+				</div>
+			</div>
 		</header>
 		<div class="menuPrincipal">
 			<ul>
@@ -23,6 +27,22 @@
 				<li><a href="quienesSomos.html">¿Quiénes Somos?</a></li>
 			</ul>
 		</div>
+		<section>
+			<article class="previaConImagen">
+				<div class="encabezadoQueja">
+					<h4>Titulo de la queja</h4>
+					<h6>Categoria de la queja</h6>
+				</div>
+				<div class="contenidoQueja">
+					<img class="imagenQueja" src="https://cdn.elgrupoinformatico.com/Noticias/2017/12/jaja-inocentes-550x312.jpg">
+					<p class="descripcionQueja">jksajkhdsahjkldsakhlasjlksakldsanksjdshskahc</p>
+				</div>
+				<div class="pieDeQueja">
+					<a href="">Ir a queja</a>
+					<input class="botonGuardar" type="image" name="" src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/512/flag-icon.png">
+				</div>
+			</article>
+		</section>
 		<footer>
 			<span>
 				<h3>Escuela Superior Politécnica del Litoral - Guayaquil - Ecuador</h3>
