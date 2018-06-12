@@ -4,8 +4,7 @@
 }
 
 header .logoCabecera {
-	width: 5%;
-	height: 5%;
+	height: 4em;
 }
 
 .previaConImagen {
@@ -18,5 +17,5 @@ header .logoCabecera {
 }
 
 footer #logoFooter {
-	width: 5%;
+	height: 4em;
 }
