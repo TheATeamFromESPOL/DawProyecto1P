@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="quejas,sociales,quejas sociales,">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/todos.css">
@@ -9,44 +10,69 @@
 	</head>
 	<body>
 		<!-- Encabezado de todas las paginas -->
-		<header>
-			<div class="container-fluid d-flex align-items-center">
-				<img class="logo logoCabecera" src="img/logo.png">
-				<div class="mr-auto p-2">
-					<h1><span>Portal de Quejas</span></h1>
+		<header class="fondo">
+				<div class="container-fluid d-flex align-items-center">
+					<div class=" p-2">
+							<a href="index.html"><img class="logo logoCabecera" src="img/logo.png"></a>
+					</div>				
+					<div class="mr-auto p-2">
+						<h1><a href="index.html"><span>Portal de Quejas</span></h1></a>
+					</div>
+					<div class="p-2">
+						<a href="iniciarSesion.html">Iniciar sesión</a> │ <a href="registro.html">Registrarse</a>
+					</div>
 				</div>
-				<div class="p-2">
-					<a href="iniciarSesion.html">Iniciar sesión</a> │ <a href="registro.html">Registrarse</a>
-				</div>
-			</div>
 		</header>
-		<h3>¡Regístrate!</h3>
-		<h5>De esa forma podras interactuar con los demas usuarios y colocar tus propias quejas.</h5>
-		<form id="formularioRegistro" action="">
-			<label for="nombreUsuario">Usuario:</label><br>
-			<input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuario a usar"><br><br>
-			<label for="correoUsuario">Correo:</label><br>
-			<input type="text" name="correoUsuario" id="correoUsuario" placeholder="Correo a utilizar"><br><br>
-			<label for="numeroCelular">Celular:</label><br>
-			<input type="text" name="numeroCelular" id="numeroCelular" placeholder="Numero de celular">
-			<!-- El símbolo (?) es para que el usuario pase el mouse sobre él y se muestre un mensaje de por qué se necesita esa información -->
-			<label id="consultaDeCelular">(?)</label>
-			<br><br>
-			<label>Provincia: </label>
-			<select name="provincias" id="provincias">
-				<option value="Esmeraldas">Esmeraldas</option>
-				<option value="Guayas">Guayas</option>
-				<option value="Pichincha">Pichincha</option>
-			</select>
-			<label>Ciudad: </label>
-			<select name="ciudades" id="ciudades">
-			</select><br><br>
-			<label for="password">Contraseña:</label><br>
-			<input type="text" name="password" id="password" placeholder="Contraseña a utilizar"><br><br>
-			<label for="passwordRepeat">Confirmar contraseña:</label><br>
-			<input type="text" name="passwordRepeat" id="passwordRepeat" placeholder="Confirme su contraseña"><br><br>
-			<button type="button">REGISTRAR</button>
-		</form>
+		<div class="container">
+			<h3 >¡Regístrate!</h3>
+			<h5>De esa forma podras interactuar con los demas usuarios y colocar tus propias quejas.</h5>
+			<form id="formularioRegistro" action="">
+				<div class="form-group">
+					<label for="nombreUsuario">Usuario:</label><br>
+					<input class="form-control" type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuario a usar"><br>
+				</div>
+				<div class="form-group">
+					<label for="correoUsuario">Correo:</label><br>
+					<input class="form-control" type="text" name="correoUsuario" id="correoUsuario" placeholder="Correo a utilizar"><br>
+				</div>
+				<div class="form-group">
+					<label for="numeroCelular">Celular:</label><br>
+					<input class="form-control" type="text" name="numeroCelular" id="numeroCelular" placeholder="Numero de celular">
+				</div>	
+				
+				<!-- El símbolo (?) es para que el usuario pase el mouse sobre él y se muestre un mensaje de por qué se necesita esa información -->
+				<label id="consultaDeCelular">(?)</label>
+				<br>
+				<div class="form-group">
+					<label>Provincia: </label>
+					<select class="form-control" name="provincias" id="provincias">
+						<option value="Esmeraldas">Esmeraldas</option>
+						<option value="Guayas">Guayas</option>
+						<option value="Pichincha">Pichincha</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Ciudad: </label>
+					<select class="form-control" name="ciudades" id="ciudades">
+						<option value="Esmeraldas">Esmeraldas</option>
+						<option value="Guayaquil">Guayaquil</option>
+						<option value="Quito">Quito</option>	
+					</select>
+				</div>
+				<br>
+				<div class="form-group">
+					<label for="password">Contraseña:</label><br>
+					<input class="form-control" type="text" name="password" id="password" placeholder="Contraseña a utilizar"><br>	
+				</div>
+				<div class="form-group">
+					<label for="passwordRepeat">Confirmar contraseña:</label><br>
+					<input class="form-control" type="text" name="passwordRepeat" id="passwordRepeat" placeholder="Confirme su contraseña"><br>
+				</div>
+				
+				<button type="button" class="btn btn-default">REGISTRAR</button>
+			</form>
+		</div>
+		
 		
 		<!-- Pie de pagina en todas las paginas -->
 		<footer>

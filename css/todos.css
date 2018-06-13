@@ -19,3 +19,16 @@ header .logoCabecera {
 footer #logoFooter {
 	height: 4em;
 }
+.formatoNav{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color: #f3f3f3;
+}
+.fondo{
+	background-color: black;
+}
+#centro{
+	align-content: center;
+}
