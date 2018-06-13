@@ -23,8 +23,9 @@ footer #logoFooter {
 	list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-	background-color: #f3f3f3;
+	overflow: hidden;
+	border: 0;
+	background-color: black;
 }
 .fondo{
 	background-color: black;
@@ -32,4 +33,9 @@ footer #logoFooter {
 .imgNoticia{
 	width: 100%;
     height: auto;
+}
+.categoria{
+	padding: 1cm;
+	background-color: black;
+	text-decoration-color: white;
 }
