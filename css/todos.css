@@ -29,6 +29,7 @@ footer #logoFooter {
 .fondo{
 	background-color: black;
 }
-#centro{
-	align-content: center;
+.imgNoticia{
+	width: 100%;
+    height: auto;
 }
