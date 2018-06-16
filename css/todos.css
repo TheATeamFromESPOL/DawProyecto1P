@@ -3,32 +3,56 @@
 	cursor: pointer;
 }
 
+header {
+	background-color: #262726
+}
+
+header div{
+	color: #ffffff;
+}
+
 header .logoCabecera {
 	height: 4em;
 }
 
-.previaConImagen {
-	border: 2px solid #bdb2b2;
-	width: 50%;	
+.previa{
+	margin: 1%;
 }
 
+.previaConImagen{
+	border: 2px solid #bdb2b2;
+	width: 30%;
+	height: auto;
+}
+
+.previaConImagen .imagenQueja{
+	width: 100%;
+}
 .pieDeQueja .botonGuardar {
 	width: 2%;
 }
 
+.parejaPreviaSoloTexto {
+	width: 30%;
+}
+
+.previaSoloTexto{
+	border: 2px solid #bdb2b2;
+	width: 100%;
+}
 footer #logoFooter {
 	height: 4em;
 }
-.formatoNav{
+.menu{
 	list-style-type: none;
     margin: 0;
     padding: 0;
 	overflow: hidden;
 	border: 0;
-	background-color: black;
+	background-color: #262726;
 }
 .fondo{
-	background-color: black;
+	background-color: #262726;
 }
 .imgNoticia{
 	width: 100%;
@@ -36,6 +60,6 @@ footer #logoFooter {
 }
 .categoria{
 	padding: 1cm;
-	background-color: black;
+	background-color: #262726;
 	text-decoration-color: white;
 }
