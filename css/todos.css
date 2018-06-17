@@ -15,19 +15,21 @@ header .logoCabecera {
 	height: 4em;
 }
 
+/*
 .previa{
 	margin: 1%;
 }
+*/
 
 .previaConImagen{
 	border: 2px solid #bdb2b2;
-	width: 30%;
 	height: auto;
 }
 
 .previaConImagen .imagenQueja{
 	width: 100%;
 }
+/*
 .pieDeQueja .botonGuardar {
 	width: 2%;
 }
@@ -35,10 +37,10 @@ header .logoCabecera {
 .parejaPreviaSoloTexto {
 	width: 30%;
 }
-
+*/
 .previaSoloTexto{
 	border: 2px solid #bdb2b2;
-	width: 100%;
+/*	width: 100%; */
 }
 footer #logoFooter {
 	height: 4em;
