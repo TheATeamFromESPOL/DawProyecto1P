@@ -26,37 +26,36 @@
 
 		<!-- Menu de index,manual,categorias y quienesSomos -->
 		<div class="menu container-fluid align-items-center">
-				<ul class="nav nav-tabs nav-justified">
-						<li class="nav-item">
-							<a class="nav-link col-sm text-center" href="index.html">
-									Inicio
-							</a>		
-						</li>
-						<li class="nav-item">
-							<a class="nav-link activo col-sm text-center" href="categorias.html">
-									Categorias
-							</a>					
-						</li>
-						<li class="nav-item">
-							<a class="nav-link col-sm text-center" href="manual.html">
-									Manual
-								</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link col-sm text-center" href="quienesSomos.html">
-									¿Quiénes Somos?
-							</a>
-						</li>
-				</ul>  
-				
-			</div>
+			<ul class="nav nav-tabs nav-justified">
+				<li class="nav-item">
+					<a class="nav-link col-sm text-center" href="index.html">
+							Inicio
+					</a>		
+				</li>
+				<li class="nav-item">
+					<a class="nav-link activo col-sm text-center" href="categorias.html">
+							Categorias
+					</a>					
+				</li>
+				<li class="nav-item">
+					<a class="nav-link col-sm text-center" href="manual.html">
+							Manual
+						</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link col-sm text-center" href="quienesSomos.html">
+							¿Quiénes Somos?
+					</a>
+				</li>
+			</ul>  		
+		</div>
 		
-		<section class="row ">
-			<nav class="navbar categoria col-3 ">
-					<!-- Links -->
-				<ul class="navbar-nav ">
+		<section>
+		<!--
+			<nav class="navbar categoria col-sm-3 ">
+				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Barrios/Ciudadelas</a>
+						<p class="nav-link">Barrios/Ciudadelas</p>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Casas/Terrenos abandonados</a>
@@ -89,11 +88,73 @@
 						<a class="nav-link" href="#">Otros</a>
 					</li>
 				</ul>
-					
 			</nav>
 			<div class="col-8">
-
 			</div>
+		-->
+			<div class="row col-12">
+				<div class="list-group col-sm-3">
+					<a href="#" id="categoriaBarrios" class="list-group-item list-group-item-action active" onclick="activar(this)">
+					    Barrios/Ciudadelas
+					</a>
+					<a href="#" id="categoriaCasas" class="list-group-item list-group-item-action" onclick="activar(this)">
+						Casas/Terrenos abandonados
+					</a>
+					<a href="#" id="categoriaPandillas" class="list-group-item list-group-item-action" onclick="activar(this)">
+						Pandillas
+					</a>
+					<a href="#" id="categoriaCalles" class="list-group-item list-group-item-action" onclick="activar(this)">
+						Calles/Carreteras dañadas
+					</a>
+					<a href="#" id="categoriaSeniales" class="list-group-item list-group-item-action" onclick="activar(this)">
+						Señales de tránsito
+					</a>
+					<a href="#" id="categoriaAnimales" class="list-group-item list-group-item-action" onclick="activar(this)">
+						Animales callejeros
+					</a>
+					<a href="#" id="categoriaBasura" class="list-group-item list-group-item-action" onclick="activar(this)">
+						Basura en las calles
+					</a>
+				</div>
+				<div class="container col-sm-9 border">
+					<div id="cont-categoriaBarrios" class="d-flex flex-wrap">
+						<div class="col-md-3 previaConImagen p-1 align-self-stretch">
+							<div class="encabezadoQueja">
+								<h3>Baches en carretera</h3>
+							</div>
+							<div class="contenidoQueja">
+								<img class="imagenQueja" src="img/130926-carretera.jpg">
+								<p class="textoQueja">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum venenatis erat. Vivamus posuere neque ac magna scelerisque facilisis. In pellentesque tempor nunc vel fringilla. Etiam eget facilisis lectus. Mauris tempor enim vel lacus tincidunt imperdiet.</p>
+							</div>
+							<div class="pieQueja container-fluid d-flex">
+								<a href="#home" class="mr-auto p-2">Nombre usuario</a>
+								<div class="botonesQueja p-2">
+									blalakdlksajdas
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="cont-categoriaCasas" class="d-none flex-wrap">
+						<div class="col-md-3 previaConImagen p-1 align-self-stretch">
+							<div class="encabezadoQueja">
+								<h3>Dos muertos por accidente</h3>
+							</div>
+							<div class="contenidoQueja">
+								<img class="imagenQueja" src="img/cruces.jpeg">
+								<p class="textoQueja">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum venenatis erat. Vivamus posuere neque ac magna scelerisque facilisis. In pellentesque tempor nunc vel fringilla. Etiam eget facilisis lectus. Mauris tempor enim vel lacus tincidunt imperdiet.</p>
+							</div>
+							<div class="pieQueja container-fluid d-flex">
+								<a href="#home" class="mr-auto p-2">Nombre usuario</a>
+								<div class="botonesQueja p-2">
+									blalakdlksajdas
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="js/categorias.js"></script>
+			<script type="text/javascript" src="js/jquery.min.js"></script>
 		</section>
 
 		<!-- Pie de pagina en todas las paginas -->

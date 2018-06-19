@@ -71,3 +71,7 @@ footer #logoFooter {
 	background-color: #262726;
 	text-decoration-color: white;
 }
+
+.esconder{
+	display: none;
+}
