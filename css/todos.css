@@ -46,12 +46,16 @@ footer #logoFooter {
 	height: 4em;
 }
 .menu{
+	border-style: none;
 	list-style-type: none;
     margin: 0;
     padding: 0;
 	overflow: hidden;
-	border: 0;
 	background-color: #262726;
+	
+}
+.activo{
+	background-color: #ffffff;
 }
 .fondo{
 	background-color: #262726;
@@ -61,6 +65,8 @@ footer #logoFooter {
     height: auto;
 }
 .categoria{
+	
+	border-style: none;
 	padding: 1cm;
 	background-color: #262726;
 	text-decoration-color: white;
