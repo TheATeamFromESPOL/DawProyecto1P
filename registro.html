@@ -6,6 +6,7 @@
 		<meta name="keywords" content="quejas,sociales,quejas sociales,">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/todos.css">
+		<link rel="stylesheet" type="text/css" href="css/registro.css">
 		<title>Portal de quejas</title>
 	</head>
 	<body>
@@ -37,12 +38,14 @@
 					<input class="form-control" type="text" name="correoUsuario" id="correoUsuario" placeholder="Correo a utilizar"><br>
 				</div>
 				<div class="form-group">
-					<label for="numeroCelular">Celular:</label><br>
+					<label for="numeroCelular">Celular:</label>
+					<span id="consultaDeCelular">(?)</span>
+					<span id="porqueCelular" class="esconder">Para que las organizaciones pertinentes se puedan poner en contacto contigo.</span><br>
+					<script type="text/javascript" src="js/jquery.min.js"></script>
+					<script type="text/javascript" src="js/registro.js"></script>
 					<input class="form-control" type="text" name="numeroCelular" id="numeroCelular" placeholder="Numero de celular">
 				</div>	
-				
 				<!-- El símbolo (?) es para que el usuario pase el mouse sobre él y se muestre un mensaje de por qué se necesita esa información -->
-				<label id="consultaDeCelular">(?)</label>
 				<br>
 				<div class="form-group">
 					<label>Provincia: </label>

@@ -16,10 +16,9 @@ function activar(ja){
 		j.classList.remove("d-flex");
 		j.classList.remove("d-none");
 		if(j.id.includes(ja.id)){
-			j.classList.remove("d-flex");
+			j.classList.add("d-flex");
 		}else{
 			j.classList.add("d-none");
 		}
 	}
-
 }
