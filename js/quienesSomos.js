@@ -17,7 +17,7 @@ function obtenerIntegrantes(data){
 		var nuevo = $("<div></div>").attr("class","border col-md-4 p-2 m-5");
 		nuevo.append("<h3>"+nombres+"</h3>");
 		nuevo.append("<h3>"+apellidos+"</h3>");
-		nuevo.append("<img class='col-12' src='"+urlFoto+"' alt='Foto de"+nombres+apellidos+"'>");
+		nuevo.append("<img class='col-12' src='"+urlFoto+"' alt='Foto de "+nombres+apellidos+"'>");
 		nuevo.append("<p><strong>Carrera: </strong>"+carrera+"</p>")
 		nuevo.append("<p><strong>Bio: </strong><br>"+bio+"</p>")
 		nuevo.appendTo("#integrantes");
