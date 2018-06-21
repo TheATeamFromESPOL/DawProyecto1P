@@ -14,6 +14,12 @@ function obtenerIntegrantes(data){
 		var urlFoto = $(this).find('urlFoto').text();
 		var carrera = $(this).find('carrera').text();
 		var bio = $(this).find('bio').text();
-		$("<div></div>").attr("class","col-md-4 p-1").html(nombres).appendTo("#integrantes");
+		var nuevo = $("<div></div>").attr("class","border col-md-4 p-2 m-5");
+		nuevo.append("<h3>"+nombres+"</h3>");
+		nuevo.append("<h3>"+apellidos+"</h3>");
+		nuevo.append("<img class='col-12' src='"+urlFoto+"' alt='Foto de"+nombres+apellidos+"'>");
+		nuevo.append("<p><strong>Carrera: </strong>"+carrera+"</p>")
+		nuevo.append("<p><strong>Bio: </strong><br>"+bio+"</p>")
+		nuevo.appendTo("#integrantes");
 	});
 }
