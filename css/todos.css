@@ -75,3 +75,7 @@ footer #logoFooter {
 .esconder{
 	display: none;
 }
+
+.encabezadoQueja:hover{
+	cursor: pointer;
+}

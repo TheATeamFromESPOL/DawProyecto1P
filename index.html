@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/todos.css">		
 		<title>Portal de quejas</title>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
+		
 	</head>
 	<body>
 		<!-- Encabezado de todas las paginas -->
@@ -55,7 +55,7 @@
 		<section>
 			<div class="filaQuejas d-flex flex-wrap align-content-stretch align-items-center">
 				<div class="col-md-3 previaConImagen p-1 align-self-stretch">
-					<div class="encabezadoQueja">
+					<div class="encabezadoQueja" id="bachesencarretera">
 						<h3>Baches en carretera</h3>
 					</div>
 					<div class="contenidoQueja">
@@ -71,7 +71,7 @@
 				</div>
 				<div class="col-md-3 parejaPreviaSoloTexto p-0 align-self-stretch">
 					<div class="previa previaSoloTexto p-1 align-self-stretch">
-						<div class="encabezadoQueja">
+						<div class="encabezadoQueja" id="presidentemalnacido">
 							<h3>Presidente malnacido</h3>
 						</div>
 						<div class="contenidoQueja">
@@ -85,7 +85,7 @@
 						</div>
 					</div>
 					<div class="previa previaSoloTexto p-1 align-self-stretch">
-						<div class="encabezadoQueja">
+						<div class="encabezadoQueja" id="merobaronenelbanco">
 							<h3>Me robaron en el banco</h3>
 						</div>
 						<div class="contenidoQueja">
@@ -100,7 +100,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 previaConImagen p-1 align-self-stretch">
-					<div class="encabezadoQueja">
+					<div class="encabezadoQueja" id="dosmuertosporaccidente">
 						<h3>Dos muertos por accidente</h3>
 					</div>
 					<div class="contenidoQueja">
@@ -115,7 +115,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 previaConImagen p-1 align-self-stretch">
-					<div class="encabezadoQueja">
+					<div class="encabezadoQueja" id="alfinhicieronalgo">
 						<h3>Al fin hicieron algo</h3>
 					</div>
 					<div class="contenidoQueja">
@@ -130,6 +130,8 @@
 					</div>
 				</div>
 			</div>
+			<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script type="text/javascript" src="js/index.js"></script>
 		</section>
 
 		<!-- Pie de pagina en todas las paginas -->
