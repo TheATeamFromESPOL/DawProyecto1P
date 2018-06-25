@@ -2,120 +2,134 @@
 	"quejas": [{ 
 		"Barrios/Ciudadelas": [{
 			'repeat(7,10)':{
-				"id":'{{objectId()}}',
-				"titulo": "TITULO QUEJA",
-				"fecha":'{{date()}}',
-				"contenido":'{{lorem(10, "sentences")}}',
-				"imagen":'http://placehold.it/500x500',
-				"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
-				"comentarios":[{
-					'repeat(1,5)':{
-						"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
-						"comentario":'{{lorem(3, "sentences")}}',
-						"fecha":'{{date()}}'
-					}
+				"queja": [{
+					"id":'{{objectId()}}',
+					"titulo": "TITULO QUEJA",
+					"fecha":'{{date()}}',
+					"contenido":'{{lorem(10, "sentences")}}',
+					"imagen":'http://placehold.it/500x500',
+					"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
+					"comentarios":[{
+						'repeat(1,5)':{
+							"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
+							"comentario":'{{lorem(3, "sentences")}}',
+							"fecha":'{{date()}}'
+						}
+					}]
 				}]
 			}
 		}],
 		"Casas/Terrenos abandonados": [{
 			'repeat(7,10)':{
-				"id":'{{objectId()}}',
-				"titulo": "TITULO QUEJA",
-				"fecha":'{{date()}}',
-				"contenido":'{{lorem(10, "sentences")}}',
-				"imagen":'http://placehold.it/500x500',
-				"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
-				"comentarios":[{
-					'repeat(1,5)':{
-						"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
-						"comentario":'{{lorem(3, "sentences")}}',
-						"fecha":'{{date()}}'
-					}
+				"queja": [{
+					"id":'{{objectId()}}',
+					"titulo": "TITULO QUEJA",
+					"fecha":'{{date()}}',
+					"contenido":'{{lorem(10, "sentences")}}',
+					"imagen":'http://placehold.it/500x500',
+					"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
+					"comentarios":[{
+						'repeat(1,5)':{
+							"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
+							"comentario":'{{lorem(3, "sentences")}}',
+							"fecha":'{{date()}}'
+						}
+					}]
 				}]
 			}
 		}],
 		"Pandillas":[{
 			'repeat(7,10)':{
-				"id":'{{objectId()}}',
-				"titulo": "TITULO QUEJA",
-				"fecha":'{{date()}}',
-				"contenido":'{{lorem(10, "sentences")}}',
-				"imagen":'http://placehold.it/500x500',
-				"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
-				"comentarios":[{
-					'repeat(1,5)':{
-						"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
-						"comentario":'{{lorem(3, "sentences")}}',
-						"fecha":'{{date()}}'
-					}
+				"queja": [{
+					"id":'{{objectId()}}',
+					"titulo": "TITULO QUEJA",
+					"fecha":'{{date()}}',
+					"contenido":'{{lorem(10, "sentences")}}',
+					"imagen":'http://placehold.it/500x500',
+					"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
+					"comentarios":[{
+						'repeat(1,5)':{
+							"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
+							"comentario":'{{lorem(3, "sentences")}}',
+							"fecha":'{{date()}}'
+						}
+					}]
 				}]
 			}
 		}],
 		"Calles/Carreteras":[{
 			'repeat(7,10)':{
-				"id":'{{objectId()}}',
-				"titulo": "TITULO QUEJA",
-				"fecha":'{{date()}}',
-				"contenido":'{{lorem(10, "sentences")}}',
-				"imagen":'http://placehold.it/500x500',
-				"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
-				"comentarios":[{
-					'repeat(1,5)':{
-						"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
-						"comentario":'{{lorem(3, "sentences")}}',
-						"fecha":'{{date()}}'
-					}
+				"queja": [{
+					"id":'{{objectId()}}',
+					"titulo": "TITULO QUEJA",
+					"fecha":'{{date()}}',
+					"contenido":'{{lorem(10, "sentences")}}',
+					"imagen":'http://placehold.it/500x500',
+					"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
+					"comentarios":[{
+						'repeat(1,5)':{
+							"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
+							"comentario":'{{lorem(3, "sentences")}}',
+							"fecha":'{{date()}}'
+						}
+					}]
 				}]
 			}
 		}],
 		"Señales de tránsito":[{
 			'repeat(7,10)':{
-				"id":'{{objectId()}}',
-				"titulo": "TITULO QUEJA",
-				"fecha":'{{date()}}',
-				"contenido":'{{lorem(10, "sentences")}}',
-				"imagen":'http://placehold.it/500x500',
-				"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
-				"comentarios":[{
-					'repeat(1,5)':{
-						"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
-						"comentario":'{{lorem(3, "sentences")}}',
-						"fecha":'{{date()}}'
-					}
+				"queja": [{
+					"id":'{{objectId()}}',
+					"titulo": "TITULO QUEJA",
+					"fecha":'{{date()}}',
+					"contenido":'{{lorem(10, "sentences")}}',
+					"imagen":'http://placehold.it/500x500',
+					"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
+					"comentarios":[{
+						'repeat(1,5)':{
+							"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
+							"comentario":'{{lorem(3, "sentences")}}',
+							"fecha":'{{date()}}'
+						}
+					}]
 				}]
 			}
 		}],
 		"Animales callejeros":[{
 			'repeat(7,10)':{
-				"id":'{{objectId()}}',
-				"titulo": "TITULO QUEJA",
-				"fecha":'{{date()}}',
-				"contenido":'{{lorem(10, "sentences")}}',
-				"imagen":'http://placehold.it/500x500',
-				"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
-				"comentarios":[{
-					'repeat(1,5)':{
-						"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
-						"comentario":'{{lorem(3, "sentences")}}',
-						"fecha":'{{date()}}'
-					}
+				"queja": [{
+					"id":'{{objectId()}}',
+					"titulo": "TITULO QUEJA",
+					"fecha":'{{date()}}',
+					"contenido":'{{lorem(10, "sentences")}}',
+					"imagen":'http://placehold.it/500x500',
+					"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
+					"comentarios":[{
+						'repeat(1,5)':{
+							"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
+							"comentario":'{{lorem(3, "sentences")}}',
+							"fecha":'{{date()}}'
+						}
+					}]
 				}]
 			}
 		}],
 		"Basura en las calles":[{
 			'repeat(7,10)':{
-				"id":'{{objectId()}}',
-				"titulo": "TITULO QUEJA",
-				"fecha":'{{date()}}',
-				"contenido":'{{lorem(10, "sentences")}}',
-				"imagen":'http://placehold.it/500x500',
-				"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
-				"comentarios":[{
-					'repeat(1,5)':{
-						"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
-						"comentario":'{{lorem(3, "sentences")}}',
-						"fecha":'{{date()}}'
-					}
+				"queja": [{
+					"id":'{{objectId()}}',
+					"titulo": "TITULO QUEJA",
+					"fecha":'{{date()}}',
+					"contenido":'{{lorem(10, "sentences")}}',
+					"imagen":'http://placehold.it/500x500',
+					"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
+					"comentarios":[{
+						'repeat(1,5)':{
+							"nombreUsuario":'{{firstName()}}{{integer(1,120)}}',
+							"comentario":'{{lorem(3, "sentences")}}',
+							"fecha":'{{date()}}'
+						}
+					}]
 				}]
 			}
 		}]
