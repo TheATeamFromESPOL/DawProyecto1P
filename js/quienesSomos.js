@@ -5,6 +5,13 @@
 		dataType: "xml",
 		success: obtenerIntegrantes
 	});
+
+	$.ajax({
+		type: "GET",
+		url: "data/timeline.xml",
+		dataType: "xml",
+		success: cargarTimeline
+	});
 })();
 
 function obtenerIntegrantes(data){
@@ -21,5 +28,25 @@ function obtenerIntegrantes(data){
 		nuevo.append("<p><strong>Carrera: </strong>"+carrera+"</p>")
 		nuevo.append("<p><strong>Bio: </strong><br>"+bio+"</p>")
 		nuevo.appendTo("#integrantes");
+	});
+}
+
+function cargarTimeline(data){
+	var i = 0;
+	$(data).find('content').each(function(){
+		var fecha = $(this).find('fecha').text();
+		var contenido = $(this).find('Contenido').text();
+		var nuevo;
+		if(i%2 == 0){
+			nuevo = $('<div></div>').attr("class","contenedor izq");
+		}else{
+			nuevo = $('<div></div>').attr("class","contenedor der");
+		}
+		var cont = $('<div></div>').attr("class","content");
+		cont.append("<h2>"+fecha+"</h2>");
+		cont.append("<p>"+contenido+"</p>");
+		nuevo.append(cont);
+		nuevo.appendTo("#timeline");
+		i++;
 	});
 }
