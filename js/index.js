@@ -12,8 +12,8 @@
 })();
 
 function cargarNoticia(){
-    var noticia=this.textContent;
-    window.location="noticia.html?noticia="+noticia;
+    var noticiaId=$(this).attr('id');
+    window.location="noticia.html?noticia="+noticiaId;
 }
 
 function obtenerQuejas(data){
@@ -27,11 +27,11 @@ function obtenerQuejas(data){
 			var contenido = $(i).find('contenido').text();
 			var imagen = $(i).find('imagen').text();
 			var nombreUsuario = $(i).find('nombreUsuario').text();
+			console.log(nombreUsuario);
 			var conteoComentarios = 0;
 			for(comentario of $(i).find('comentarios').find('comentario')){
 				conteoComentarios++;
 			}
-			console.log(conteoComentarios);
 			var previaQueja = $("<div></div>").attr("class", "previaConImagen col-md-3 p-1 align-self-stretch d-flex flex-column");
 			var encabezadoQueja = $("<div><div>").attr({id: idQueja, class: "encabezadoQueja"});
 			encabezadoQueja.append('<h3 id="'+idQueja+'"class="tituloQueja">'+titulo+'</h3>');
@@ -55,7 +55,8 @@ function obtenerQuejas(data){
 			previaQueja.append(pieQueja);
 			previaQueja.appendTo("#conjuntoDeQuejas");
 
-			var quejas=$(".encabezadoQueja").find('*').click(cargarNoticia);			
 		}
 	})
+	var quejas=$(".encabezadoQueja").find('*').click(cargarNoticia);			
+
 }
