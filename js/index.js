@@ -7,9 +7,9 @@
 		success: obtenerQuejas
 	});
 
-})();
+	
 
-var quejas=$(".tituloQueja").find('*').click(cargarNoticia);
+})();
 
 function cargarNoticia(){
     var noticia=this.textContent;
@@ -54,6 +54,8 @@ function obtenerQuejas(data){
 			previaQueja.append(contenidoQueja);
 			previaQueja.append(pieQueja);
 			previaQueja.appendTo("#conjuntoDeQuejas");
+
+			var quejas=$(".encabezadoQueja").find('*').click(cargarNoticia);			
 		}
 	})
 }

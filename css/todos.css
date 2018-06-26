@@ -76,6 +76,9 @@ footer #logoFooter {
 	display: none;
 }
 
-.tituloQueja:hover{
+.encabezadoQueja:hover{
 	cursor: pointer;
+}
+#conjuntoDeQuejas{
+	padding: 1%;
 }
