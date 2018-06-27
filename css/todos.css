@@ -1,4 +1,4 @@
-.logo:hover{
+.logo:hover,.botonCerrar:hover{
 	opacity: 0.7;
 	cursor: pointer;
 }
@@ -82,3 +82,8 @@ footer #logoFooter {
 #conjuntoDeQuejas{
 	padding: 1%;
 }
+
+.textoCentrado {
+	text-align: center;
+}
+
