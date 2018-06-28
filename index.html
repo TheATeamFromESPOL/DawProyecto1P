@@ -5,19 +5,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="quejas,sociales,quejas sociales,">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/todos.css">		
+		<link rel="stylesheet" type="text/css" href="css/todos.css">
 		<title>Portal de quejas</title>
     </style>
 	</head>
 	<body>
 		<!-- Encabezado de todas las paginas -->
-		<header class="">
+		<header class="encabezado">
 			<div class="container-fluid d-flex align-items-center">
-				<div class=" p-2">
-					<a href="index.html"><img class="logo logoCabecera" src="img/Logo.png"></a>
+				<div class="p-2">
+					<a id="linkLogoCabecera" href="index.html">
+						<img id="logoCabecera" class="logo" src="img/Logo.png">
+					</a>
 				</div>				
 				<div class="mr-auto p-2">
-					<h1><a href="index.html"><span>Portal de Quejas</span></h1></a>
+					<h1><a href="index.html"><span>Portal de Quejas</span></a></h1>
 				</div>
 				<div class="p-2">
 					<button id="botonNuevaQueja" class="btn btn-primary" type="submit">Nueva Queja</button>
@@ -26,53 +28,53 @@
 					<a href="iniciarSesion.html">Iniciar sesión</a> │ <a href="registro.html">Registrarse</a>
 				</div>
 			</div>
+			<!-- Menu de index,manual,categorias y quienesSomos -->
+			<div id="menuNavegacion" class="menu container-fluid align-items-center">
+				<ul class="nav nav-tabs nav-justified">
+					<li class="nav-item">
+						<a class="nav-link activo col-sm text-center" href="index.html">
+							Inicio
+						</a>		
+					</li>
+					<li class="nav-item">
+						<a class="nav-link col-sm text-center" href="categorias.html">
+							Categorias
+						</a>					
+					</li>
+					<li class="nav-item">
+						<a class="nav-link col-sm text-center" href="quienesSomos.html">
+							¿Quiénes Somos?
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link col-sm text-center" href="contactenos.html">
+							Contactenos
+						</a>
+					</li>
+				</ul>
+			</div>
 		</header>
-
-		<!-- Menu de index,manual,categorias y quienesSomos -->
 		
-		<div class="menu container-fluid align-items-center">
-			<ul class="nav nav-tabs nav-justified">
-				<li class="nav-item">
-					<a class="nav-link activo col-sm text-center" href="index.html">
-						Inicio
-					</a>		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link col-sm text-center" href="categorias.html">
-						Categorias
-					</a>					
-				</li>
-				<li class="nav-item">
-					<a class="nav-link col-sm text-center" href="quienesSomos.html">
-						¿Quiénes Somos?
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link col-sm text-center" href="contactenos.html">
-						Contactenos
-					</a>
-				</li>
-			</ul>
-		</div>
-		
-		<section>
-			<div id="conjuntoDeQuejas" class="filaQuejas d-flex flex-wrap align-content-stretch align-items-center">
-			</div>
-			<script type="text/javascript" src="js/jquery.min.js"></script>
-			<script type="text/javascript" src="js/index.js"></script>
-		</section>
-
-		<!-- Pie de pagina en todas las paginas -->
-		<footer>
-			<div class="container-fluid d-flex align-items-center row">
-				<div class="col-11">
-					<h3>Escuela Superior Politécnica del Litoral - Guayaquil - Ecuador</h3>
-					<p>El contenido de esta obra es de propiedad intelectual de la ESPOL y de los estudiantes que la realizaron. Todos los derechos reservados. Prohibida su reproducción total o parcial, comunicación
-					pública o distribución sin autorización previa del titular de los derecho. &#xA9; </p>
+		<div class="content">
+			<section>
+				<div id="conjuntoDeQuejas" class="filaQuejas d-flex flex-wrap align-content-stretch align-items-center">
 				</div>
-				<img class="logo col-1" id="logoFooter" src="img/Logo.png">
-			</div>
-		</footer>
+				<script type="text/javascript" src="js/jquery.min.js"></script>
+				<script type="text/javascript" src="js/index.js"></script>
+			</section>
+
+			<!-- Pie de pagina en todas las paginas -->
+			<footer>
+				<div class="container-fluid d-flex align-items-center row">
+					<div class="col-11">
+						<h3>Escuela Superior Politécnica del Litoral - Guayaquil - Ecuador</h3>
+						<p>El contenido de esta obra es de propiedad intelectual de la ESPOL y de los estudiantes que la realizaron. Todos los derechos reservados. Prohibida su reproducción total o parcial, comunicación
+						pública o distribución sin autorización previa del titular de los derecho. &#xA9; </p>
+					</div>
+					<img class="logo col-1" id="logoFooter" src="img/Logo.png">
+				</div>
+			</footer>
+		</div>
 
 		<article id="nuevaQueja" class="esconder">
 			<div id="cuadroNuevaQueja" class="d-flex flex-column border p-2 col-md-12">
@@ -151,7 +153,7 @@
 				</div>
 			</div>
 		</article>
-		<script type="text/javascript" src="js/crearQueja.js"></script>
+		<script type="text/javascript" src="js/crearQueja.js"></script>	
 	</body>
 
 </html>

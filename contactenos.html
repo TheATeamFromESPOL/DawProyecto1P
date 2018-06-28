@@ -10,10 +10,13 @@
 	</head>
 	<body>
 		<!-- Encabezado de todas las paginas -->
-		<header class="">
-			<div class="container-fluid d-flex align-items-center">
-				<div class=" p-2">
-					<a href="index.html"><img class="logo logoCabecera" src="img/Logo.png"></a>
+		<!-- Encabezado de todas las paginas -->
+		<header>
+			<div class="container-fluid d-flex align-items-center encabezado">
+				<div class="p-2">
+					<a id="linkLogoCabecera" href="index.html">
+						<img id="logoCabecera" class="logo" src="img/Logo.png">
+					</a>
 				</div>				
 				<div class="mr-auto p-2">
 					<h1><a href="index.html"><span>Portal de Quejas</span></h1></a>
@@ -25,33 +28,32 @@
 					<a href="iniciarSesion.html">Iniciar sesión</a> │ <a href="registro.html">Registrarse</a>
 				</div>
 			</div>
+			<!-- Menu de index,manual,categorias y quienesSomos -->
+			<div id="menuNavegacion" class="menu container-fluid align-items-center">
+				<ul class="nav nav-tabs nav-justified">
+					<li class="nav-item">
+						<a class="nav-link col-sm text-center" href="index.html">
+							Inicio
+						</a>		
+					</li>
+					<li class="nav-item">
+						<a class="nav-link col-sm text-center" href="categorias.html">
+							Categorias
+						</a>					
+					</li>
+					<li class="nav-item">
+						<a class="nav-link col-sm text-center" href="quienesSomos.html">
+							¿Quiénes Somos?
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link activo col-sm text-center" href="contactenos.html">
+							Contactenos
+						</a>
+					</li>
+				</ul>
+			</div>
 		</header>
-		
-		<!-- Menu de index,manual,categorias y quienesSomos -->
-		<div class="menu container-fluid align-items-center">
-			<ul class="nav nav-tabs nav-justified">
-				<li class="nav-item">
-					<a class="nav-link col-sm text-center" href="index.html">
-						Inicio
-					</a>		
-				</li>
-				<li class="nav-item">
-					<a class="nav-link col-sm text-center" href="categorias.html">
-						Categorias
-					</a>					
-				</li>
-				<li class="nav-item">
-					<a class="nav-link col-sm text-center" href="quienesSomos.html">
-						¿Quiénes Somos?
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link activo col-sm text-center" href="contactenos.html">
-						Contactenos
-					</a>
-				</li>
-			</ul>
-		</div>
 		
 		<section class="p-4">
 			<div class="container">
