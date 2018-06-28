@@ -6,9 +6,6 @@
 		dataType: "xml",
 		success: obtenerQuejas
 	});
-
-	
-
 })();
 
 function cargarNoticia(){
@@ -27,7 +24,6 @@ function obtenerQuejas(data){
 			var contenido = $(i).find('contenido').text();
 			var imagen = $(i).find('imagen').text();
 			var nombreUsuario = $(i).find('nombreUsuario').text();
-			console.log(nombreUsuario);
 			var conteoComentarios = 0;
 			for(comentario of $(i).find('comentarios').find('comentario')){
 				conteoComentarios++;

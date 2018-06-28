@@ -83,4 +83,10 @@ function cargarCategorias(data){
 			}
 		}
 	})
+	var quejas=$(".encabezadoQueja").find('*').click(cargarNoticia);
+}
+
+function cargarNoticia(){
+    var noticiaId=$(this).attr('id');
+    window.location="noticia.html?noticia="+noticiaId;
 }

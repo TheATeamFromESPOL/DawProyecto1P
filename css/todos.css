@@ -1,3 +1,9 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 .logo:hover,.botonCerrar:hover{
 	opacity: 0.7;
 	cursor: pointer;
@@ -79,6 +85,7 @@ footer #logoFooter {
 .encabezadoQueja:hover{
 	cursor: pointer;
 }
+
 #conjuntoDeQuejas{
 	padding: 1%;
 }
@@ -87,3 +94,34 @@ footer #logoFooter {
 	text-align: center;
 }
 
+
+#nuevaQueja {
+	position: fixed;
+	z-index: 100;
+	height: 90%;
+	left: 5%;
+	top: 5%;
+	width: 90%;
+	background-color: #ffffff;
+	border-radius: 25px;
+}
+
+
+#cuadroNuevaQueja {
+	border-radius: 25px;
+	height: 100%;
+}
+
+#cuadroNuevaQueja #nuevaQuejaArriba {
+	height: 50%;
+}
+
+#cuadroNuevaQueja #pieDeNuevaQueja {
+	height: 40%;
+}
+/*
+#botonNuevaQueja {
+	position: fixed;
+	top: 0px;
+	left: 50%;
+}*/
