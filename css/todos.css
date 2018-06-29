@@ -183,3 +183,7 @@ footer #logoFooter {
 #cuadroNuevaQueja #pieDeNuevaQueja {
 	height: 40%;
 }
+
+svg{
+	width: 100%;
+}

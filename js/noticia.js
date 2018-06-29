@@ -38,7 +38,7 @@ function obtenerQuejas(data){
                 for(comentario of $(i).find('comentarios').find('comentario')){
                     conteoComentarios++;
                 }
-                var previaQueja = $("<div></div>").attr("class",'"border col-md-4 p-2 m-5"');
+                var previaQueja = $("<div></div>").attr("class","previaConImagen border col-md-4 p-2 m-5");
                 var encabezadoQueja = $("<div><div>").attr({id: idQueja, class: "encabezadoQueja"});
                 encabezadoQueja.append('<h3 id="'+idQueja+'"class="tituloQueja">'+titulo+'</h3>');
                 encabezadoQueja.append("<h6>"+nombreCategoria+"</h6>");
@@ -82,7 +82,7 @@ function obtenerQuejas(data){
                 
                 var accion= $("<div></div>").attr("class", "action");
                 var rhs = $("<div></div>").attr("class", "rhs");
-                rhs.append('<a href="javascript:void(0);" class="cmnt-btn size-30 submit-comment">Postear</a>');
+                rhs.append('<a href="javascript:void(0);" class="cmnt-btn size-30 submit-comment">Comentar</a>');
                 accion.append(rhs);
                 payLoad.append(textArea);
                 payLoad.append(accion);
