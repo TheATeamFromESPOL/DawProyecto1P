@@ -4,7 +4,7 @@
 }
 
 html, body {
-	height: 100%;
+	height: auto;
 	margin: 0;
 	padding: 0;
 }
@@ -162,7 +162,7 @@ footer #logoFooter {
 
 #nuevaQueja {
 	position: fixed;
-	z-index: 100;
+	z-index: 2000;
 	height: 90%;
 	left: 5%;
 	top: 5%;

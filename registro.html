@@ -11,22 +11,25 @@
 	</head>
 	<body>
 		<!-- Encabezado de todas las paginas -->
-		<!-- Encabezado de todas las paginas -->
-		<header>
-			<div class="container-fluid d-flex align-items-center encabezado">
-				<div class="p-2">
-					<a id="linkLogoCabecera" href="index.html">
-						<img id="logoCabecera" class="logo" src="img/Logo.png">
-					</a>
-				</div>				
-				<div class="mr-auto p-2">
-					<h1><a href="index.html"><span>Portal de Quejas</span></h1></a>
+		<header class="encabezado sticky-top">
+			<div class="container-fluid d-flex flex-wrap align-items-center">
+				<div class="d-flex mr-auto p-2 align-items-center">
+					<div class="p-2">
+						<a id="linkLogoCabecera" href="index.html">
+							<img id="logoCabecera" class="logo" src="img/Logo.png">
+						</a>
+					</div>		
+					<div class="">
+						<h1><a href="index.html"><span>Portal de Quejas</span></a></h1>
+					</div>
 				</div>
-				<div class="p-2">
-					<button id="botonNuevaQueja" class="btn btn-primary" type="submit">Nueva Queja</button>
-				</div>
-				<div class="p-2">
-					<a href="iniciarSesion.html">Iniciar sesión</a> │ <a href="registro.html">Registrarse</a>
+				<div class="d-flex">
+					<div class="p-2">
+						<button id="botonNuevaQueja" class="btn btn-primary" type="submit">Nueva Queja</button>
+					</div>
+					<div class="p-2 align-self-center">
+						<a href="iniciarSesion.html">Iniciar sesión</a> │ <a href="registro.html">Registrarse</a>
+					</div>
 				</div>
 			</div>
 			<!-- Menu de index,manual,categorias y quienesSomos -->
