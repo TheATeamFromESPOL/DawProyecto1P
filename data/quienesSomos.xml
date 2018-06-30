@@ -4,13 +4,13 @@
 		<apellidos>Arizaga Diaz</apellidos>
 		<urlFoto>img/luis.jpg</urlFoto>
 		<carrera>Ingenieria en Computacion</carrera>
-		<bio>Nulla blandit scelerisque consectetur. Fusce vitae massa eget est elementum bibendum. Morbi commodo justo nisi. Suspendisse viverra rhoncus velit ac laoreet. Sed auctor accumsan felis nec ultricies. Mauris facilisis rutrum nunc. Mauris finibus urna sapien, ac mattis urna lobortis sed. Proin eget dignissim sapien. Duis libero tortor, blandit sit amet risus sed, hendrerit feugiat nisi. Vivamus ut tempus tellus. Vestibulum bibendum viverra mauris, molestie tristique ipsum rhoncus nec. Nullam eu venenatis magna. Mauris eget felis at nibh iaculis pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc lacinia metus augue, eu pellentesque leo fermentum a.</bio>
+		<bio>Nulla blandit scelerisque consectetur. Sed auctor accumsan felis nec ultricies. Mauris facilisis rutrum nunc. Mauris nc lacinia metus augue, eu pellentesque leo fermentum a. Aenean sit amet ex nec libero placerat feugiat. Mauris ultricies ex eu velit semper, in placerat lacus vulputate. Nam euismod, velit sed interdu.</bio>
 	</integrante>
 	<integrante>
 		<nombres>Lucio Israel</nombres>
 		<apellidos>Arias Sela</apellidos>
 		<urlFoto>img/lucio.jpg</urlFoto>
 		<carrera>Ingenieria en Computacion</carrera>
-		<bio>Fusce venenatis lorem dui, at interdum ex dignissim vitae. Nam posuere consequat arcu, at eleifend lectus congue non. Ut lacinia pharetra orci, non auctor nibh fringilla laoreet. Maecenas eget lorem leo. Fusce eu viverra metus. Suspendisse potenti. Sed at blandit metus, et commodo velit. Sed sollicitudin quam vitae nibh elementum, vitae aliquam dui ultrices. Cras id turpis sit amet nisi laoreet sollicitudin. Mauris ultricies, tortor quis vestibulum ultrices, libero libero vulputate ipsum, at lobortis velit tellus vel turpis. Maecenas rutrum ipsum neque, ac suscipit felis pellentesque ac. Cras pulvinar ut sem id imperdiet. Aenean sit amet ex nec libero placerat feugiat. Mauris ultricies ex eu velit semper, in placerat lacus vulputate. Nam euismod, velit sed interdum elementum, ipsum risus efficitur orci, sit amet finibus turpis ex non purus.</bio>
+		<bio>Fusce venenatis lorem dui, at interdum ex dignissim vitae. Maecenas eget lorem leo. Fusce eu viverra metus. Suspendisse potenti. Sed at blandit metus, et commodo velit. Sed sollicitudin quam vitae nibh elementum, vitae aliquam dui ultrices. Cras id turpis sit amet nisi laoreet sollicitudin. Mauris ultricies, tortor quis vestibulum ultrices, libero libero vulputate ipsum, at lobortis velit tellus vel turus.</bio>
 	</integrante>
 </integrantes>

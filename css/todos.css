@@ -103,7 +103,6 @@ header {
 	font-weight: bolder;
 	color: #EFF4F7;
 
-
 	width:100%;
 }
 
@@ -298,5 +297,6 @@ svg{
 	header h1{
 		font-size: 200%;
 	}
+	
 
 }
