@@ -4,7 +4,7 @@
 }
 
 html, body {
-	height: 100%;
+	height: auto;
 	margin: 0;
 	padding: 0;
 }
@@ -39,11 +39,12 @@ header span{
 
 header div{
 	color: #ffffff;
+	font-size: 100%;
 }
 
-header .encabezado {
+header .menu {
 	height: 100%;
-	font-size: 1.2em;
+	font-size: 0.8em;
 }
 
 header #linkLogoCabecera {
@@ -52,7 +53,7 @@ header #linkLogoCabecera {
 }
 
 header #logoCabecera {
-	height: 5vw;
+	height: 3em;
 }
 
 footer {
@@ -162,7 +163,7 @@ footer #logoFooter {
 
 #nuevaQueja {
 	position: fixed;
-	z-index: 100;
+	z-index: 2000;
 	height: 90%;
 	left: 5%;
 	top: 5%;
@@ -186,4 +187,27 @@ footer #logoFooter {
 
 svg{
 	width: 100%;
+}
+
+.escritorio {
+	display: block;
+}
+
+.movil {
+	display: none;
+}
+
+@media screen and (max-width: 600px){
+
+	header .d-flex{
+		display: block;
+		flex-wrap: nowrap;
+		width: 100%;
+		justify-content: center;
+	}
+
+	header h1{
+		font-size: 200%;
+	}
+
 }
