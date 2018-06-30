@@ -29,8 +29,8 @@ function obtenerQuejas(data){
 				conteoComentarios++;
 			}
 			var previaQueja = $("<div></div>").attr("class", "previaConImagen col-md-3 p-1 align-self-stretch d-flex flex-column");
-			var encabezadoQueja = $("<div><div>").attr({id: idQueja, class: "encabezadoQueja"});
-			encabezadoQueja.append('<h3 id="'+idQueja+'"class="tituloQueja">'+titulo+'</h3>');
+			var encabezadoQueja = $("<div></div>").attr("class", "encabezadoQueja");
+			encabezadoQueja.append('<div class="tituloQueja"> <h3 id="'+idQueja+'">'+titulo+'</h3></div>');
 			encabezadoQueja.append("<h6>"+nombreCategoria+"</h6>");
 			var contenidoQueja = $("<div></div>").attr("class", "contenidoQueja");
 			contenidoQueja.append('<img class="imagenQueja" src="'+imagen+'">');
@@ -53,6 +53,33 @@ function obtenerQuejas(data){
 
 		}
 	})
-	var quejas=$(".encabezadoQueja").find('*').click(cargarNoticia);			
+	$(".tituloQueja").find('*').click(cargarNoticia);			
 
 }
+
+$(document).ready(cambiosNav);
+var contador = 1; 
+function cambiosNav(){
+	$('.menu_bar').click(function(){
+		// $('nav').toggle(); 
+		
+		$('ul').removeClass("row");
+		if(contador == 1){
+			$('nav').animate({
+				left: '0'
+			});
+			
+			console.log("abre?")
+			contador = 0;
+		} else {
+			
+			contador = 1;
+			$('nav').animate({
+				left: '-100%'
+			});
+			$('ul').addClass("row");
+		}
+ 
+	});
+ 
+};
