@@ -94,8 +94,8 @@
 
 .frontside .card,
 .backside .card {
-    min-height: 312px;
-    min-width: 312px;
+    min-height: 0;
+    min-width: 0;
 }
 
 .backside .card a {
