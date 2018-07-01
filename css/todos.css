@@ -55,47 +55,6 @@ header nav ul li a:hover {
 .content {
 	padding-top: 20px
 }
- 
-@media screen and (max-width:768px ) {
-	header nav {
-		width:80%;
-		height:100%;
-		left:-100%;
-		margin:0;
-		position: fixed;
-	}
- 
-	header nav ul li {
-		display:block;
-		float:none;
-		border-bottom:1px solid rgba(255,255,255, .3);
-	}
- 
-	.menu_bar {
-		display:block;
-		width:100%;
-		background:#ccc;
-	}
- 
-	.menu_bar .bt-menu {
-		display:block;
-		padding:20px;
-		background:#262726;
-		color:#fff;
-		text-decoration:none;
-		font-weight: bold;
-		font-size:25px;
-		-webkit-box-sizing:border-box;
-		-moz-box-sizing:border-box;
-		box-sizing:border-box;
-	}
- 
-	.menu_bar span {
-		float:right;
-		font-size:40px;
-	}
-}
-
 
 
 html, body {
@@ -206,8 +165,8 @@ footer #logoFooter {
 	border: 2px dashed #bdb2b2;
 	height: auto;
 	background-color: #3a3c3b;
-	margin-left: 4%;
-	margin-right: 4%;
+	margin-right: 3%;
+	margin-left: 3%;
 	margin-bottom: 2%;
 }
 
@@ -301,23 +260,9 @@ svg{
 	display: none;
 }
 
-@media screen and (max-width: 768px){
-
-	header .d-flex{
-		display: block;
-		flex-wrap: nowrap;
-		width: 100%;
-		justify-content: center;
-	}
-
-	header h1{
-		font-size: 200%;
-	}
-}
-
 
 div[class="encabezadoQueja"] h3{
-	width: 100%;
+	width: 90%;
 	text-overflow: ellipsis; 
 	overflow: hidden; 
 	white-space: nowrap;
@@ -344,4 +289,63 @@ div[class="contenidoQueja"] p.textoQueja{
 
 #botonEnviarQueja{
 	background-color: #262726;
+}
+
+@media screen and (max-width:768px ) {
+	header nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+ 
+	header nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+ 
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:#262726;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+ 
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	header .d-flex{
+		display: block;
+		flex-wrap: nowrap;
+		width: 100%;
+		justify-content: center;
+	}
+
+	header h1{
+		font-size: 200%;
+	}
+
+	.previaConImagen{
+		margin-right: 0%;
+		margin-left: 0%;
+		margin-bottom: 0%;
+		border-top: 3px solid #ffffff;
+		border-bottom: 3px solid #ffffff;
+	}
 }
