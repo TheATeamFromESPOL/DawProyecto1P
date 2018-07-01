@@ -6,11 +6,11 @@
 		success: cargarCategorias
 	});
 })();
-
+/*
 var itemsMenu = document.querySelectorAll('a[class*="list-group-item"]');
 var itemsContenido = document.querySelectorAll('div[id^="cont-"]');
 
-/*
+
 function activar(ja){
 	for(i of itemsMenu){
 		if(i == ja){
