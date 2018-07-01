@@ -83,32 +83,47 @@ function cargarTimeline(data){
 	});
 }
 function cargarEstadisticos(data){
+	var datos2={labels:[],datasets:[{label:"Estadistico por numero de quejas",data:[],backgroundColor: [],borderColor:[]}]
+	}
 	var datos = [];
 	$(data).find('categoria').each(function(){
-		var categoria={}
+		//var categoria={}
 		var nombreCategoria = $(this).find('nombreCategoria').text();
-		categoria["label"]=nombreCategoria;
-		categoria["value"]=0;
-		categoria["color"]=getRandomColor();		
+		datos2["labels"].push(nombreCategoria);
+		//categoria["label"]=nombreCategoria;
+		//categoria["value"]=0;
+		//categoria["color"]=getRandomColor();		
 		var contador=0;
 		var quejas = $(this).find('queja');
 		for(i of quejas){
 			contador++;
 		}
-		categoria.value=contador;
-		datos.push(categoria);
+		datos2["datasets"][0]["data"].push(contador);
+		datos2["datasets"][0]["backgroundColor"].push(getRandomColor());
+		datos2["datasets"][0]["borderColor"].push("#262726");
+		//categoria.value=contador;
+		//datos.push(categoria);
 	});
-		
-	var svg = d3.select("#statistics").append("svg").attr("height",450);
-	svg.append("g").attr("id","salesDonut");
-	Donut3D.draw("salesDonut", datos, 250, 200, 250, 200, 20, 0);
-	
-	var tabla=$('<table></table>').attr("class","tablaColores");
-	for(dat of datos){
-		tabla.append("<tr><th>"+dat.label+"</th><th width=20 bgcolor='"+dat.color+"'></th></tr>");
 
-	}
-	tabla.appendTo("#statistics");
+
+	var ctx = $("#myChart");
+	var myDoughnutChart = new Chart(ctx, {
+		type: 'doughnut',
+		data: datos2,
+		options:{
+			legend: {
+				labels: {
+					// This more specific font property overrides the global property
+					fontColor: 'white',
+					fontSize:15,
+				}
+			}
+		}
+	});
+
+	//console.log(datos);
+	console.log(datos2);
+	//tabla.appendTo("#statistics");
 	
 }
 function getRandomColor() {
@@ -117,5 +132,17 @@ function getRandomColor() {
   for (var i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
-  return color;
+  return hexToRgbA(color);
+}
+function hexToRgbA(hex){
+    var c;
+    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+        c= hex.substring(1).split('');
+        if(c.length== 3){
+            c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+        }
+        c= '0x'+c.join('');
+        return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',1)';
+    }
+    throw new Error('Bad Hex');
 }

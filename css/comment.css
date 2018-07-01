@@ -1,6 +1,6 @@
 .CS3 {
   font: 13px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-  background-color: #fff;
+  background-color: inherit;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -317,7 +317,7 @@
 }
 .CS3 .tab-bar {
   height: 43px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #262726;
 }
 .CS3 .tab-bar-left {
   float: left;
