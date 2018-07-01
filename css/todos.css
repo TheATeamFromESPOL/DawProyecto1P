@@ -341,3 +341,7 @@ div[class="contenidoQueja"] p.textoQueja{
 .colorBtn{
 	background-color: #262726;
 }
+
+#botonEnviarQueja{
+	background-color: #262726;
+}

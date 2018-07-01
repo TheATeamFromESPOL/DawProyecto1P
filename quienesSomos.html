@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +18,7 @@
 				<div class="d-flex mr-auto align-items-center">
 					<div class="p-2">
 						<a id="linkLogoCabecera" href="index.html">
-							<img id="logoCabecera" class="logo" src="img/Logo.png">
+							<img id="logoCabecera" class="logo" src="img/Logo.png" alt="Logo Empresa">
 						</a>
 					</div>		
 					<div class="p-2">
@@ -77,12 +77,12 @@
 			</div>-->
 		</header>
 		<h3 class="subtitulo">Desarrolladores</h3>
-		<section id="team" class="pb-5">
+		<div id="team" class="pb-5">
 			<div class="container">
 				<div id="integrantes" class="d-flex flex-wrap justify-content-center">
 				</div>
 			</div>
-		</section>
+		</div>
 		<!--  
 		<h3 class="subtitulo">Desarrolladores</h3>
 		<section class="team">
@@ -92,29 +92,27 @@
 		</section>
 		-->
 		<h3 class="subtitulo">Línea de Tiempo de los desarrolladores en ESPOL</h3>
-		<section id="sectionTimeline">
+		<div id="sectionTimeline">
 			<div id="timeline" class="lineaTiempo">
 			</div>
-		</section>
+		</div>
 		<br><br>
 		<br>
 		<h3 class="subtitulo">Estadísticas de quejas por Categoria</h3>
-		<section>
+		<div>
 			<div class="d-flex flex-wrap justify-content-center">
 					<div id="statistics" class="border col-md-4 p-2 m-5">
 
 					</div>
 			</div>
-			
-			</div>
-		</section>
+		</div>
 
 
-		<script type="text/javascript" src="js/d3.v3.min.js"></script>
-		<script type="text/javascript" src="js/Donut3D.js"></script>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/menu.js"></script>
-		<script type="text/javascript" src="js/quienesSomos.js"></script>
+		<script src="js/d3.v3.min.js"></script>
+		<script src="js/Donut3D.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/quienesSomos.js"></script>
 		<!-- Pie de pagina en todas las paginas -->
 		<footer>
 			<div class="p-2 align-items-center">
@@ -136,13 +134,13 @@
 					</div>
 					<div class="form-group">
 						<label for="explicacionQueja">Explica tu queja:</label><br>
-						<textarea class="form-control" type="text" name="explicacionQueja" id="explicacionQueja" placeholder="¿Por qué te estás quejando? ¿Qué sugerencias tienes para mejorar esta situación?" rows=4></textarea>
+						<textarea class="form-control" name="explicacionQueja" id="explicacionQueja" placeholder="¿Por qué te estás quejando? ¿Qué sugerencias tienes para mejorar esta situación?" rows=4></textarea>
 					</div>
 				</div>
 				<div id="pieDeNuevaQueja" class="d-flex flex-wrap bd-highlight align-items-center">
 					<div class="form-group col-sm-4">
 						<label for="imagen">Carga una foto de prueba: </label><br>
-						<input type="file" accept=".jpeg,.jpg,.png" name="imagen">
+						<input type="file" accept=".jpeg,.jpg,.png" id="imagen" name="imagen">
 					</div>
 					<div style="height: 100%" class="col-sm-6 ml-auto bd-highlight">
 						<label>La queja se guardará con la siguiente ubicación: </label>
@@ -200,6 +198,6 @@
 				</div>
 			</div>
 		</article>
-		<script type="text/javascript" src="js/crearQueja.js"></script>
+		<script src="js/crearQueja.js"></script>
 	</body>
 </html>
