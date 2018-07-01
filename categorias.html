@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +18,7 @@
 				<div class="d-flex mr-auto align-items-center">
 					<div class="p-2">
 						<a id="linkLogoCabecera" href="index.html">
-							<img id="logoCabecera" class="logo" src="img/Logo.png">
+							<img id="logoCabecera" class="logo" src="img/Logo.png" alt="Logo empresa">
 						</a>
 					</div>		
 					<div class="p-2">
@@ -75,7 +75,7 @@
 			</div>-->
 		</header>
 		
-		<div id="contenido" class="row">
+		<div id="contenido" class="d-flex">
 			<div id="menuContenido" class="col-md-3">
 			    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 				    <a class="nav-link active" id="v-pills-BarriosCiudadelas-tab" data-toggle="pill" href="#v-pills-BarriosCiudadelas" role="tab" aria-controls="v-pills-BarriosCiudadelas" aria-selected="true">Barrios/Ciudadelas</a>
@@ -97,7 +97,7 @@
 				    	<div id="cont-Barrios/Ciudadelas" class="d-flex flex-wrap justify-content-center"></div>
 				    </div>
 				    <div class="tab-pane fade" id="v-pills-CasasTerrenos" role="tabpanel" aria-labelledby="v-pills-CasasTerrenos-tab">
-				    	<div id="cont-Casas/Terrenos abandonados" class="d-flex flex-wrap justify-content-center"></div>
+				    	<div id="cont-Casas/TerrenosAbandonados" class="d-flex flex-wrap justify-content-center"></div>
 				    </div>
 				    <div class="tab-pane fade" id="v-pills-Pandillas" role="tabpanel" aria-labelledby="v-pills-Pandillas-tab">
 				    	<div id="cont-Pandillas" class="d-flex flex-wrap justify-content-center"></div>
@@ -106,10 +106,10 @@
 				    	<div id="cont-Calles/Carreteras" class="d-flex flex-wrap justify-content-center"></div>
 				    </div>
 				    <div class="tab-pane fade" id="v-pills-Señales" role="tabpanel" aria-labelledby="v-pills-Señales-tab">
-				    	<div id="cont-Señales de tránsito" class="d-flex flex-wrap justify-content-center"></div>
+				    	<div id="cont-SeñalesDeTránsito" class="d-flex flex-wrap justify-content-center"></div>
 				    </div>
 				    <div class="tab-pane fade" id="v-pills-AnimalesCallejeros" role="tabpanel" aria-labelledby="v-pills-AnimalesCallejeros-tab">
-				    	<div id="cont-Animales callejeros" class="d-flex flex-wrap justify-content-center"></div>
+				    	<div id="cont-AnimalesCallejeros" class="d-flex flex-wrap justify-content-center"></div>
 				    </div>
 			    </div>
 			</div>
@@ -151,10 +151,10 @@
 			</div>
 		</section>-->
 
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/categorias.js"></script>
-		<script type="text/javascript" src="js/menu.js"></script>
-		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/categorias.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
 		<!-- Pie de pagina en todas las paginas -->
 		<footer>
 			<div class="p-2 align-items-center">
@@ -177,13 +177,13 @@
 					</div>
 					<div class="form-group">
 						<label for="explicacionQueja">Explica tu queja:</label><br>
-						<textarea class="form-control" type="text" name="explicacionQueja" id="explicacionQueja" placeholder="¿Por qué te estás quejando? ¿Qué sugerencias tienes para mejorar esta situación?" rows=4></textarea>
+						<textarea class="form-control" name="explicacionQueja" id="explicacionQueja" placeholder="¿Por qué te estás quejando? ¿Qué sugerencias tienes para mejorar esta situación?" rows=4></textarea>
 					</div>
 				</div>
 				<div id="pieDeNuevaQueja" class="d-flex flex-wrap bd-highlight align-items-center">
 					<div class="form-group col-sm-4">
 						<label for="imagen">Carga una foto de prueba: </label><br>
-						<input type="file" accept=".jpeg,.jpg,.png" name="imagen">
+						<input type="file" accept=".jpeg,.jpg,.png" id="imagen" name="imagen">
 					</div>
 					<div style="height: 100%" class="col-sm-6 ml-auto bd-highlight">
 						<label>La queja se guardará con la siguiente ubicación: </label>
@@ -237,10 +237,10 @@
 				</div>
 				<br>
 				<div class="d-flex justify-content-center">
-					<button type="button" id="botonEnviar" class="btn btn-default col-12">ENVIAR</button>
+					<button type="button" id="botonEnviarQueja" class="btn btn-default col-12">ENVIAR</button>
 				</div>
 			</div>
 		</article>
-		<script type="text/javascript" src="js/crearQueja.js"></script>
+		<script src="js/crearQueja.js"></script>
 	</body>
 </html>

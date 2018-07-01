@@ -47,7 +47,7 @@ function cargarCategorias(data){
 			for(comentario of $(i).find('comentarios').find('comentario')){
 				conteoComentarios++;
 			}
-			var previaQueja = $("<div></div>").attr("class", "previaConImagen col-md-3 m-2 p-1 align-self-stretch d-flex flex-column");
+			var previaQueja = $("<div></div>").attr("class", "previaConImagen col-md-3 p-1 align-self-stretch d-flex flex-column");
 			var encabezadoQueja = $("<div><div>").attr({id: idQueja, class: "encabezadoQueja"});
 			encabezadoQueja.append('<h3 id="'+idQueja+'"class="tituloQueja">'+titulo+'</h3>');
 			encabezadoQueja.append("<h6>"+nombreCategoria+"</h6>");
@@ -71,17 +71,17 @@ function cargarCategorias(data){
 			if(nombreCategoria=="Barrios/Ciudadelas"){
 				previaQueja.appendTo("#cont-Barrios\\/Ciudadelas");
 			}else if(nombreCategoria=="Casas/Terrenos abandonados"){
-				previaQueja.appendTo("#cont-Casas\\/Terrenos\\ abandonados");
+				previaQueja.appendTo("#cont-Casas\\/TerrenosAbandonados");
 			}else if(nombreCategoria=="Pandillas"){
 				previaQueja.appendTo("#cont-Pandillas");
 			}else if(nombreCategoria=="Calles/Carreteras"){
 				previaQueja.appendTo("#cont-Calles\\/Carreteras");
 			}else if(nombreCategoria=="Señales de tránsito"){
-				previaQueja.appendTo("#cont-Señales\\ de\\ tránsito");
+				previaQueja.appendTo("#cont-SeñalesDeTránsito");
 			}else if(nombreCategoria=="Animales callejeros"){
-				previaQueja.appendTo("#cont-Animales\\ callejeros");
+				previaQueja.appendTo("#cont-AnimalesCallejeros");
 			}else if(nombreCategoria=="Basura en las calles"){
-				previaQueja.appendTo("#cont-Basura\\ en\\ las\\ calles");
+				previaQueja.appendTo("#cont-BasuraEnLasCalles");
 			}
 		}
 	})

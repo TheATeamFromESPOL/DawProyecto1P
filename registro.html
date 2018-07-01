@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +18,7 @@
 				<div class="d-flex mr-auto align-items-center">
 					<div class="p-2">
 						<a id="linkLogoCabecera" href="index.html">
-							<img id="logoCabecera" class="logo" src="img/Logo.png">
+							<img id="logoCabecera" class="logo" src="img/Logo.png" alt="Logo Empresa">
 						</a>
 					</div>		
 					<div class="p-2">
@@ -41,7 +41,7 @@
 			<br>
 			<h3>¡Regístrate!</h3>
 			<h5>De esa forma podras interactuar con los demas usuarios y colocar tus propias quejas.</h5>
-			<form id="formularioRegistro" action="">
+			<form id="formularioRegistro">
 				<div class="form-group">
 					<label for="nombreUsuario">Usuario:</label><br>
 					<input class="form-control" type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuario a usar"><br>
@@ -54,8 +54,8 @@
 					<label for="numeroCelular">Celular:</label>
 					<span id="consultaDeCelular">(?)</span>
 					<span id="porqueCelular" class="esconder">Para que las organizaciones pertinentes se puedan poner en contacto contigo.</span><br>
-					<script type="text/javascript" src="js/jquery.min.js"></script>
-					<script type="text/javascript" src="js/registro.js"></script>
+					<script src="js/jquery.min.js"></script>
+					<script src="js/registro.js"></script>
 					<input class="form-control" type="text" name="numeroCelular" id="numeroCelular" placeholder="Numero de celular">
 				</div>	
 				<!-- El símbolo (?) es para que el usuario pase el mouse sobre él y se muestre un mensaje de por qué se necesita esa información -->
@@ -116,13 +116,13 @@
 					</div>
 					<div class="form-group">
 						<label for="explicacionQueja">Explica tu queja:</label><br>
-						<textarea class="form-control" type="text" name="explicacionQueja" id="explicacionQueja" placeholder="¿Por qué te estás quejando? ¿Qué sugerencias tienes para mejorar esta situación?" rows=4></textarea>
+						<textarea class="form-control" name="explicacionQueja" id="explicacionQueja" placeholder="¿Por qué te estás quejando? ¿Qué sugerencias tienes para mejorar esta situación?" rows=4></textarea>
 					</div>
 				</div>
 				<div id="pieDeNuevaQueja" class="d-flex flex-wrap bd-highlight align-items-center">
 					<div class="form-group col-sm-4">
 						<label for="imagen">Carga una foto de prueba: </label><br>
-						<input type="file" accept=".jpeg,.jpg,.png" name="imagen">
+						<input type="file" accept=".jpeg,.jpg,.png" id="imagen" name="imagen">
 					</div>
 					<div style="height: 100%" class="col-sm-6 ml-auto bd-highlight">
 						<label>La queja se guardará con la siguiente ubicación: </label>
@@ -176,10 +176,10 @@
 				</div>
 				<br>
 				<div class="d-flex justify-content-center">
-					<button type="button" id="botonEnviar" class="btn btn-default col-12">ENVIAR</button>
+					<button type="button" id="botonEnviarQueja" class="btn btn-default col-12">ENVIAR</button>
 				</div>
 			</div>
 		</article>
-		<script type="text/javascript" src="js/crearQueja.js"></script>
+		<script src="js/crearQueja.js"></script>
 	</body>
 </html>
