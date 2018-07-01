@@ -79,10 +79,10 @@ function obtenerQuejas(data){
                 var textArea=$("<div></div>").attr("class", "textarea-container");
                 var text=$("<div></div>");
                 text.append('<textarea placeholder="Deja Tu Comentario" class="post-text-area focus"></textarea>')
-                
+                textArea.append(text);
                 var accion= $("<div></div>").attr("class", "action");
                 var rhs = $("<div></div>").attr("class", "rhs");
-                rhs.append('<a href="javascript:void(0);" class="cmnt-btn size-30 submit-comment">Comentar</a>');
+                rhs.append('<a href="javascript:void(0);" class="cmnt-btn size-10 submit-comment">Comentar</a>');
                 accion.append(rhs);
                 payLoad.append(textArea);
                 payLoad.append(accion);
@@ -90,9 +90,8 @@ function obtenerQuejas(data){
                 comentar.append(payLoad);
                 comm.append(comentar);
                            
-
+                var contenidosComme=$("<div></div>");
                 for(comentario of $(i).find('comentarios').find('comentario')){
-                    var contenidosComme=$("<div></div>");
                     var conteni=$("<div></div>");
                     var comentar=$("<div></div>").attr("class", "comment-entry");
                     var avatar=$("<div></div>").attr("class", "avatar");
@@ -100,7 +99,7 @@ function obtenerQuejas(data){
                     imagContainer.append("<a href='javascript:void(0)' target='_blank'><img src='https://accounts-cdn.9gag.com/media/avatar/39207959_100_7.jpg'></a>");
                     avatar.append(imagContainer);
                     var payLoad=$("<div></div>").attr("class", "payload");
-                    var info=$("<div></div>").attr("class", "payload");
+                    var info=$("<div></div>").attr("class", "info");
                     info.append('<p><a href="javascript:void(0)" target="_blank" class="username">'+$(comentario).find('usuarioComentario').text()+'</a> </p>')
                     payLoad.append(info);
                     payLoad.append('<div class="content">'+$(comentario).find('contenidoComentario').text()+'</div>')

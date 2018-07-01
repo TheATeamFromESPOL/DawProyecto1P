@@ -179,6 +179,7 @@
 .CS3 textarea,
 .CS3 input[type='url'] {
   outline: none;
+  color: #000;
   line-height: 20px;
   padding: 6px 9px;
   margin: 6px 0;
@@ -522,6 +523,7 @@
   padding-bottom: 10px;
 }
 .CS3 .comment-entry .payload .info {
+  
   font-size: 11px;
   line-height: 20px;
   color: #999;
@@ -530,8 +532,9 @@
 .CS3 .comment-entry .payload .username,
 .CS3 .comment-entry .payload .status {
   font-weight: bold;
-  font-size: 13px;
-  color: #000;
+  font-size: 14px;
+  color: #fff;
+  font-style: italic;
 }
 .CS3 .comment-entry .payload .username:hover {
   text-decoration: underline;
@@ -894,7 +897,6 @@
 .CS3 .comment-box .action {
   height: 30px;
   padding: 5px 10px;
-  border: 1px solid #ccc;
   border-top-color: #eee;
 }
 .CS3 .comment-box .action:before,
@@ -1222,3 +1224,4 @@
   /* new name as per the CSS3 spec */
   overflow-wrap: break-word;
 }
+textarea
