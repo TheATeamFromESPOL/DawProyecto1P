@@ -324,7 +324,7 @@ div[class="encabezadoQueja"] h3{
 }
 
 div[class="encabezadoQueja"] h3:hover{
-	text-shadow: 1px 1px 5px #ffffff; 1px 0px 5px #262726;
+	text-shadow: 1px 1px 5px #ffffff; 
 }
 
 div[class="contenidoQueja"] p.textoQueja{
@@ -335,4 +335,8 @@ div[class="contenidoQueja"] p.textoQueja{
 	text-overflow: ellipsis;
 	overflow: hidden;
 	text-align: justify;
+}
+
+.colorBtn{
+	background-color: #262726;
 }

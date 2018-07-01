@@ -47,6 +47,8 @@ function obtenerIntegrantes(data){
 		mainFl.append(frontside);
 		mainFl.append(backside);
 		nuevo.append(mainFl);
+
+		//nuevo.css(heig)		
 		//nuevo.append("<h3>"+nombres+"</h3>");
 		//nuevo.append("<h3>"+apellidos+"</h3>");
 		//nuevo.append("<img class='col-12' src='"+urlFoto+"' alt='Foto de "+nombres+apellidos+"'>");
