@@ -5,10 +5,10 @@
 	padding:0;
 }
 
-
 header nav {
 	width:100%;
-	background: #262726;;
+	background: #262726;
+	padding-bottom: 0px;
 }
  
 .menu_bar {
@@ -18,11 +18,14 @@ header nav {
 header nav ul {
 	overflow:hidden;
 	list-style:none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 }
  
 header nav ul li {
 	width: 100%;
 	float:left;
+	padding-bottom: 0px;
 }
  
 header nav ul li a {
@@ -31,22 +34,29 @@ header nav ul li a {
 	color:#fff;
 	display:block;
 	text-decoration:none;
+	padding-bottom: 0px;
 }
- 
+
+header nav ul li:hover {
+	text-shadow: 0px 0px 20px #479454;
+}
+
 header nav ul li span {
 	margin-right:10px;
+	padding-bottom: 0px;
 }
  
 header nav ul li a:hover {
 	color:inherit;
-    text-decoration:none;;
+    text-decoration:none;
+    padding-bottom: 0px;
 }
  
 section {
 	padding:20px;
 }
  
-@media screen and (max-width:600px ) {
+@media screen and (max-width:768px ) {
 	header nav {
 		width:80%;
 		height:100%;
@@ -102,8 +112,8 @@ body{
 header {
 	font-weight: bolder;
 	color: #EFF4F7;
-
 	width:100%;
+	padding-bottom: 0px;
 }
 
 .encabezado {
@@ -149,7 +159,9 @@ footer {
 }
 
 footer #logoFooter {
-	max-height: 100%;
+	height: 5em;
+	width: 5em;
+	right: 15px;
 }
 
 .menu{
@@ -191,8 +203,9 @@ footer #logoFooter {
 
 
 .previaConImagen{
-	border: 2px solid #bdb2b2;
+	border: 2px dashed #bdb2b2;
 	height: auto;
+	background-color: #3a3c3b;
 }
 
 .previaConImagen .imagenQueja{
@@ -285,7 +298,7 @@ svg{
 	display: none;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
 
 	header .d-flex{
 		display: block;
@@ -299,4 +312,27 @@ svg{
 	}
 	
 
+}
+
+
+div[class="encabezadoQueja"] h3{
+	width: 100%;
+	text-overflow: ellipsis; 
+	overflow: hidden; 
+	white-space: nowrap;
+	text-decoration: underline;
+}
+
+div[class="encabezadoQueja"] h3:hover{
+	text-shadow: 1px 1px 5px #ffffff; 1px 0px 5px #262726;
+}
+
+div[class="contenidoQueja"] p.textoQueja{
+	line-height: 1em;
+	max-height: 2em;
+	word-break: keep-all;
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-align: justify;
 }

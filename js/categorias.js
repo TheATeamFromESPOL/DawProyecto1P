@@ -10,6 +10,7 @@
 var itemsMenu = document.querySelectorAll('a[class*="list-group-item"]');
 var itemsContenido = document.querySelectorAll('div[id^="cont-"]');
 
+/*
 function activar(ja){
 	for(i of itemsMenu){
 		if(i == ja){
@@ -29,6 +30,7 @@ function activar(ja){
 		}
 	}
 }
+*/
 
 function cargarCategorias(data){
 	$(data).find('categoria').each(function(){
@@ -62,7 +64,7 @@ function cargarCategorias(data){
 			}else{
 				pieQueja.append('<p class="mr-auto d-flex "><br><strong>Posteado por: </strong><a href="#home" class="mr-auto">'+nombreUsuario+'</a></p>')
 			}
-			pieQueja.append('<button type="button" class="btn btn-primary ml-auto"> Comentar <span class="badge badge-light">'+conteoComentarios+'</span></button>');
+			pieQueja.append('<button type="button" class="btn btn-primary bg-primary ml-auto"> Comentar <span class="badge badge-light">'+conteoComentarios+'</span></button>');
 			previaQueja.append(encabezadoQueja);
 			previaQueja.append(contenidoQueja);
 			previaQueja.append(pieQueja);
@@ -90,3 +92,4 @@ function cargarNoticia(){
     var noticiaId=$(this).attr('id');
     window.location="noticia.html?noticia="+noticiaId;
 }
+

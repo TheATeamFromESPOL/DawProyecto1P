@@ -45,7 +45,7 @@ function obtenerQuejas(data){
 			}else{
 				pieQueja.append('<p class="mr-auto d-flex "><br><strong>Posteado por: </strong><a href="#home" class="mr-auto">'+nombreUsuario+'</a></p>')
 			}
-			pieQueja.append('<button type="button" class="btn btn-primary ml-auto"> Comentar <span class="badge badge-light">'+conteoComentarios+'</span></button>');
+			pieQueja.append('<button type="button" class="btn btn-primary bg-primary ml-auto"> Comentar <span class="badge badge-light">'+conteoComentarios+'</span></button>');
 			previaQueja.append(encabezadoQueja);
 			previaQueja.append(contenidoQueja);
 			previaQueja.append(pieQueja);

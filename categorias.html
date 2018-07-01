@@ -7,6 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/todos.css">
 		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/snippet.css">
+		<link rel="stylesheet" type="text/css" href="css/categorias.css">
 		<title>Portal de quejas</title>
 	</head>
 	<body>
@@ -25,7 +27,7 @@
 				</div>
 				<div class="d-flex">
 					<div class="p-2">
-						<button id="botonNuevaQueja" class="btn btn-primary" type="submit">Nueva Queja</button>
+						<button id="botonNuevaQueja" class="btn btn-primary bg-primary" type="submit">Nueva Queja</button>
 					</div>
 					<div class="p-2 align-self-center">
 						<a href="iniciarSesion.html"><span class="icon-users"></span>Iniciar sesión</a> │ <a href="registro.html">Registrarse</a>
@@ -37,16 +39,14 @@
 				<a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
 			</div>
 	 
-			<nav >
+			<nav>
 				<ul class="row">
 					<li class="col"><a class="text-center" href="index.html"><span class="icon-home"></span>Inicio</a></li>
 					<li class="col activo"><a class="text-center" href="categorias.html"><span class="icon-paragraph-justify"></span>Categorias</a></li>
 					<li class="col"><a class="text-center" href="quienesSomos.html"><span class="icon-question"></span>¿Quiénes Somos?</a></li>
 					<li class="col"><a class="text-center" href="contactenos.html"><span class="icon-mail2"></span>Contactenos</a></li>
-					</ul>
+				</ul>
 			</nav>
-
-
 
 			<!-- Menu de index,manual,categorias y quienesSomos -->
 			<!--<div id="menuNavegacion" class="menu container-fluid align-items-center">
@@ -74,33 +74,73 @@
 				</ul>
 			</div>-->
 		</header>
+		
+		<div id="contenido" class="row">
+			<div id="menuContenido" class="col-md-3">
+			    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				    <a class="nav-link active" id="v-pills-BarriosCiudadelas-tab" data-toggle="pill" href="#v-pills-BarriosCiudadelas" role="tab" aria-controls="v-pills-BarriosCiudadelas" aria-selected="true">Barrios/Ciudadelas</a>
 
-		<section>
-			<div class="row col-12">
+				    <a class="nav-link" id="v-pills-CasasTerrenos-tab" data-toggle="pill" href="#v-pills-CasasTerrenos" role="tab" aria-controls="v-pills-CasasTerrenos" aria-selected="true">Casas/Terrenos abandonados</a>
+
+				    <a class="nav-link" id="v-pills-Pandillas-tab" data-toggle="pill" href="#v-pills-Pandillas" role="tab" aria-controls="v-pills-Pandillas" aria-selected="false">Pandillas</a>
+
+				    <a class="nav-link" id="v-pills-CallesCarreteras-tab" data-toggle="pill" href="#v-pills-CallesCarreteras" role="tab" aria-controls="v-pills-CallesCarreteras" aria-selected="false">Calles/Carreteras</a>
+
+				    <a class="nav-link" id="v-pills-Señales-tab" data-toggle="pill" href="#v-pills-Señales" role="tab" aria-controls="v-pills-Señales" aria-selected="false">Señales de tránsito</a>
+
+				    <a class="nav-link" id="v-pills-AnimalesCallejeros-tab" data-toggle="pill" href="#v-pills-AnimalesCallejeros" role="tab" aria-controls="v-pills-AnimalesCallejeros" aria-selected="false">Animales Callejeros</a>
+			    </div>
+			</div>
+			<div class="col-md-9 ">
+			    <div class="tab-content" id="v-pills-tabContent">
+				    <div class="tab-pane fade show active" id="v-pills-BarriosCiudadelas" role="tabpanel" aria-labelledby="v-pills-BarriosCiudadelas-tab">
+				    	<div id="cont-Barrios/Ciudadelas" class="d-flex flex-wrap justify-content-center"></div>
+				    </div>
+				    <div class="tab-pane fade" id="v-pills-CasasTerrenos" role="tabpanel" aria-labelledby="v-pills-CasasTerrenos-tab">
+				    	<div id="cont-Casas/Terrenos abandonados" class="d-flex flex-wrap justify-content-center"></div>
+				    </div>
+				    <div class="tab-pane fade" id="v-pills-Pandillas" role="tabpanel" aria-labelledby="v-pills-Pandillas-tab">
+				    	<div id="cont-Pandillas" class="d-flex flex-wrap justify-content-center"></div>
+				    </div>
+				    <div class="tab-pane fade" id="v-pills-CallesCarreteras" role="tabpanel" aria-labelledby="v-pills-CallesCarreteras-tab">
+				    	<div id="cont-Calles/Carreteras" class="d-flex flex-wrap justify-content-center"></div>
+				    </div>
+				    <div class="tab-pane fade" id="v-pills-Señales" role="tabpanel" aria-labelledby="v-pills-Señales-tab">
+				    	<div id="cont-Señales de tránsito" class="d-flex flex-wrap justify-content-center"></div>
+				    </div>
+				    <div class="tab-pane fade" id="v-pills-AnimalesCallejeros" role="tabpanel" aria-labelledby="v-pills-AnimalesCallejeros-tab">
+				    	<div id="cont-Animales callejeros" class="d-flex flex-wrap justify-content-center"></div>
+				    </div>
+			    </div>
+			</div>
+		</div>
+
+		<!--<section>
+			<div class="d-flex col-12">
 				<div class="list-group col-md-3">
-					<a href="#" id="Barrios/Ciudadelas" class="list-group-item list-group-item-action active" onclick="activar(this)">
+					<a href="#" id="Barrios/Ciudadelas" class="list-group-item list-group-item-action active" onclick="">
 					    Barrios/Ciudadelas
 					</a>
-					<a href="#" id="Casas/Terrenos abandonados" class="list-group-item list-group-item-action" onclick="activar(this)">
+					<a href="#" id="Casas/Terrenos abandonados" class="list-group-item list-group-item-action" onclick="">
 						Casas/Terrenos abandonados
 					</a>
 					<a href="#" id="Pandillas" class="list-group-item list-group-item-action" onclick="activar(this)">
 						Pandillas
 					</a>
-					<a href="#" id="Calles/Carreteras" class="list-group-item list-group-item-action" onclick="activar(this)">
+					<a href="#" id="Calles/Carreteras" class="list-group-item list-group-item-action" onclick="">
 						Calles/Carreteras
 					</a>
-					<a href="#" id="Señales de tránsito" class="list-group-item list-group-item-action" onclick="activar(this)">
+					<a href="#" id="Señales de tránsito" class="list-group-item list-group-item-action" onclick="">
 						Señales de tránsito
 					</a>
-					<a href="#" id="Animales callejeros" class="list-group-item list-group-item-action" onclick="activar(this)">
+					<a href="#" id="Animales callejeros" class="list-group-item list-group-item-action" onclick="">
 						Animales callejeros
 					</a>
-					<a href="#" id="Basura en las calles" class="list-group-item list-group-item-action" onclick="activar(this)">
+					<a href="#" id="Basura en las calles" class="list-group-item list-group-item-action" onclick="">
 						Basura en las calles
 					</a>
 				</div>
-				<div class="container col-sm-9">
+				<div class="container col-md-9">
 					<div id="cont-Barrios/Ciudadelas" class="d-flex flex-wrap justify-content-center"></div>
 					<div id="cont-Casas/Terrenos abandonados" class="d-none flex-wrap justify-content-center"></div>
 					<div id="cont-Pandillas" class="d-none flex-wrap justify-content-center"></div>
@@ -109,20 +149,18 @@
 					<div id="cont-Animales callejeros" class="d-none flex-wrap justify-content-center"></div>
 				</div>
 			</div>
-			<script type="text/javascript" src="js/jquery.min.js"></script>
-			<script type="text/javascript" src="js/categorias.js"></script>
-			<script type="text/javascript" src="js/menu.js"></script>
-		</section>
+		</section>-->
 
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/categorias.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 		<!-- Pie de pagina en todas las paginas -->
 		<footer>
-			<div class="container-fluid d-flex align-items-center row">
-				<div class="col-11">
-					<h3>Escuela Superior Politécnica del Litoral - Guayaquil - Ecuador</h3>
-					<p>El contenido de esta obra es de propiedad intelectual de la ESPOL y de los estudiantes que la realizaron. Todos los derechos reservados. Prohibida su reproducción total o parcial, comunicación
-					pública o distribución sin autorización previa del titular de los derecho. &#xA9; </p>
-				</div>
-				<img class="logo col-1" id="logoFooter" src="img/Logo.png">
+			<div class="p-2 align-items-center">
+				<h3>Escuela Superior Politécnica del Litoral - Guayaquil - Ecuador</h3>
+				<p>El contenido de esta obra es de propiedad intelectual de la ESPOL y de los estudiantes que la realizaron. Todos los derechos reservados. Prohibida su reproducción total o parcial, comunicación
+				pública o distribución sin autorización previa del titular de los derecho. &#xA9; </p>
 			</div>
 		</footer>
 
