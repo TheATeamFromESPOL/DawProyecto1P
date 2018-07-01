@@ -206,6 +206,9 @@ footer #logoFooter {
 	border: 2px dashed #bdb2b2;
 	height: auto;
 	background-color: #3a3c3b;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-bottom: 2%;
 }
 
 .previaConImagen .imagenQueja{
