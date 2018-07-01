@@ -36,9 +36,11 @@ function obtenerIntegrantes(data){
 		var backside = $('<div></div>').attr("class","backside");
 
 		var card =$('<div></div>').attr("class","card");
+		card.attr("id","delantero");
 		card.append('<div class="card-body text-center"><p><img class=" img-fluid" src="'+urlFoto+'"></p><h4 class="card-title">'+nombres+' '+apellidos+'</h4><p class="card-text"><strong>Carrera: </strong>'+carrera+'</p> </div>')
 		
 		var backcard =$('<div></div>').attr("class","card");
+		backcard.attr("id","trasero");
 		var cardBody=$('<div></div>').attr("class","card-body text-center mt-4");
 		cardBody.append('<h4 class="card-title">'+nombres+' '+apellidos+'</h4><p class="card-text">'+bio+'</p><ul class="list-inline"><li class="list-inline-item"><a class="social-icon text-xs-center" href=""><i class="fa fa-facebook"></i></a></li><li class="list-inline-item"><a class="social-icon text-xs-center" href=""><i class="fa fa-twitter"></i></a></li><li class="list-inline-item"><a class="social-icon text-xs-center" href=""><i class="fa fa-skype"></i></a></li><li class="list-inline-item"><a class="social-icon text-xs-center" href=""><i class="fa fa-google"></i></a></li></ul>');
 		backcard.append(cardBody);
@@ -47,16 +49,19 @@ function obtenerIntegrantes(data){
 		mainFl.append(frontside);
 		mainFl.append(backside);
 		nuevo.append(mainFl);
-
-		//nuevo.css(heig)		
+		
 		//nuevo.append("<h3>"+nombres+"</h3>");
 		//nuevo.append("<h3>"+apellidos+"</h3>");
 		//nuevo.append("<img class='col-12' src='"+urlFoto+"' alt='Foto de "+nombres+apellidos+"'>");
 		//nuevo.append("<p><strong>Carrera: </strong>"+carrera+"</p>")
 		//nuevo.append("<p><strong>Bio: </strong><br>"+bio+"</p>")
-		nuevo.appendTo("#integrantes");
+		nuevo.appendTo("#integrantes");	
 	});
 }
+
+  $(window).resize(function() {
+	$(".image-flip").css("height",$("#trasero").css("height"));;
+  });
 
 function cargarTimeline(data){
 	var i = 0;
