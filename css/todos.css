@@ -291,6 +291,11 @@ div[class="contenidoQueja"] p.textoQueja{
 	background-color: #262726;
 }
 
+#team h4{
+	text-align: center;
+	background-color: #262726;
+}
+
 @media screen and (max-width:768px ) {
 	header nav {
 		width:80%;
